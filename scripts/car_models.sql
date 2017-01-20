@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS car_models
  model_title character varying(125) NOT NULL,
  year integer NOT NULL,
  PRIMARY KEY (id)
-)
+);
 
 DROP INDEX IF EXISTS make_code_idx;
 DROP INDEX IF EXISTS make_and_model_code_idx;
