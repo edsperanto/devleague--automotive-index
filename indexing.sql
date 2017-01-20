@@ -6,3 +6,6 @@ SELECT DISTINCT * FROM "car_models" where year = 2010; /* 97.321 */
 
 DROP INDEX IF EXISTS make_code_idx;
 CREATE INDEX make_code_idx ON "car_models" (make_code);
+
+DROP INDEX IF EXISTS make_and_model_code_idx;
+CREATE INDEX make_and_model_code_idx ON "car_models" (make_code, model_code);
